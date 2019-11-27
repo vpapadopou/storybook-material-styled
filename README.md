@@ -2,9 +2,9 @@
 
 A simple project that integrates Storybook, Material UI and styled-components together with dynamic theme selection
 
-Read the corresponding Medium Article [here]()
+Read the relevant Medium article [here]()
 
-This project was written using:
+Written using:
 
 - create-react-app v3.2.0
 - @storybook/cli v5.2.6
@@ -15,11 +15,7 @@ This project was written using:
 
 Download the project files, then run 
 
-`yarn`
-
-or
-
-`npm install`
+`yarn` or `npm install`
 
 to install all the necessary dependencies.
 
