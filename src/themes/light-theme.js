@@ -12,6 +12,10 @@ const darkPurple = purple[900];
 export const overridings = {
   name: 'Light Theme',
   palette: {
+    awesomeColors: {
+      primary: '#fe6b8b',
+      secondary: '#ff8e53'
+    },
     primary: {
       light: accentGreen,
       main: primaryGreen,
