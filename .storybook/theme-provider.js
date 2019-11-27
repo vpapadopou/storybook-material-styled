@@ -12,9 +12,9 @@ const ThemeProvider = ({ theme, children }) => {
 
   return (
     <StylesProvider injectFirst>
-      <CssBaseline />
       <StyledThemeProvider theme={nextTheme}>
         <MuiThemeProvider theme={nextTheme}>
+          <CssBaseline />
           {children}
         </MuiThemeProvider>
       </StyledThemeProvider>
