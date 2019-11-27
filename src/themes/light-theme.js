@@ -10,6 +10,7 @@ const accentPurple = purple.A200;
 const darkPurple = purple[900];
 
 export const overridings = {
+  name: 'Light Theme',
   palette: {
     primary: {
       light: accentGreen,
@@ -23,8 +24,7 @@ export const overridings = {
       dark: darkPurple,
       contrastText: "#fff"
     }
-  },
-  themeName: "Light Theme"
+  }
 };
 
 export default createMuiTheme(overridings);
