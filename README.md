@@ -2,7 +2,7 @@
 
 A simple project that integrates Storybook, Material UI and styled-components together with dynamic theme selection
 
-Read the corresponding Medium article [here (TBA)]()
+Read the corresponding Medium article [here](https://medium.com/encode/setting-up-storybook-with-material-ui-and-styled-components-5bdacb6db866)
 
 Written using:
 
