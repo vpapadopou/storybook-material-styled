@@ -5,8 +5,9 @@ import ThemeProvider from './theme-provider';
 
 import LightTheme from '../src/themes/light-theme';
 import DarkTheme from '../src/themes/dark-theme';
+import NewTheme from '../src/themes/new-theme';
 
-const themes = [LightTheme, DarkTheme];
+const themes = [NewTheme, LightTheme, DarkTheme];
 addDecorator(withThemesProvider(themes, ThemeProvider));
 
 // automatically import all files ending in *.stories.js
