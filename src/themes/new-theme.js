@@ -70,9 +70,7 @@ export const overridings = {
     typography: {
         htmlFontSize: 10, // Tell Material-UI what's the font-size on the html element is
         fontSize: 16, //outputted as rem
-        h1: {
 
-        }
     }
 };
 

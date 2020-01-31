@@ -10,23 +10,23 @@ module.exports = {
         // Make whatever fine-grained changes you need
         config.module.rules.push({
             test: /\.less$/,
+            exclude: 'src/themes/less/_variables.less',
             use: [
                 {
                     loader: 'style-loader',
                 },
                 {
-                    loader: 'css-loader',
-                    options: {
-                        sourceMap: true,
-                    },
+                    loader: 'css-loader', //interprets @import and url() like import/require() and will resolve them
                 },
                 {
-                    loader: 'less-loader',
+                    loader: 'postcss-loader' //autoprefixing
+                },
+                {
+                    loader: 'less-loader', // compiles Less to CSS
                     options: {
                         sourceMap: true,
-                        strictMath: true,
-                        noIeCompat: true,
-                        paths: [path.resolve(__dirname, '.../src/')],
+                        javascriptEnabled: true,
+                        paths: [path.resolve(__dirname, './src/')],
                     },
                 },
             ],
