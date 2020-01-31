@@ -1,8 +1,12 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
+
 const newOrange = '#d6511d';
-//const disabledGrey = '#dedede';
 const clearGreen = '#00bcd4';
+
+/*export const newOrange = '#d6511d';
+export const disabledGrey = '#dedede';
+export const clearGreen = '#00bcd4'; */
 
 /*
 #92CBC5
@@ -44,8 +48,31 @@ export const overridings = {
             light: newOrange,
             main: newOrange,
             dark: clearGreen,
-            contrastText: "#fff"
+            contrastText: "#fff",
+
+            // UI
+            appBg: 'white',
+            appContentBg: 'silver',
+            appBorderColor: 'grey',
+            appBorderRadius: 4,
+
+            // Typography
+            fontBase: '"Open Sans", sans-serif',
+            fontCode: 'monospace',
+
+            // Text colors
+            textColor: 'black',
+            textInverseColor: 'rgba(255,255,255,0.9)',
+
+            boxShadow: '0 3px 5px 2px rgba(255, 105, 135, 0.3)',
         },
+    },
+    typography: {
+        htmlFontSize: 10, // Tell Material-UI what's the font-size on the html element is
+        fontSize: 16, //outputted as rem
+        h1: {
+
+        }
     }
 };
 

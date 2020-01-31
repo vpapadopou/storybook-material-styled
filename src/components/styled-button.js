@@ -8,12 +8,12 @@ const StyledButton = styled(MatButton)`
     ${props => props.theme.palette.awesomeColors.primary} 30%,
     ${props => props.theme.palette.awesomeColors.secondary} 90%
   );
-  border-radius: 3px;
   border: 0;
   color: white;
-  height: 48px;
+  height: ${props => props.theme.spacing(6)}px;
   padding: 0 30px;
-  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
+  box-shadow: ${props => props.theme.palette.primary.boxShadow};
+  border-radius: ${props => props.theme.spacing(.5)}px;
 `;
 
-export default StyledButton;
+export default StyledButton; 
